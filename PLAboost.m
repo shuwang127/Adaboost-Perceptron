@@ -1,6 +1,9 @@
 function [ predicts ] = PLAboost( data, weights, alphas )
-%PLABOOST Summary of this function goes here
-%   Detailed explanation goes here
+% Implementation of the boost function for perceptrons.
+% Input : data - N * dim
+%         weights - T * (dim+1)
+%         alphas - T * 1
+% Output: predicts - N * 1
 
 T = length(alphas);
 [num, dim] = size(data);
